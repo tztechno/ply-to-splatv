@@ -33,7 +33,7 @@ pip install numpy plyfile tqdm
 
 ```bash
 # Convert frame sequence to SPLATV
-python ply_to_splatv.py -i ./frames -o output.splatv
+python ply_to_splatv2.py -i ./frames -o output.splatv
 ```
 
 Your PLY files should be named sequentially (e.g., `frame_000.ply`, `frame_001.ply`, ...).
@@ -52,7 +52,7 @@ https://splatv.vercel.app/?url=YOUR_FILE_URL
 
 ```bash
 # Non-uniform time distribution (first frame longer)
-python ply_to_splatv.py -i ./frames -o output.splatv \
+python ply_to_splatv2.py -i ./frames -o output.splatv \
   --frame_times "0,0.5,0.75,1.0"
 ```
 
@@ -60,18 +60,18 @@ python ply_to_splatv.py -i ./frames -o output.splatv \
 
 ```bash
 # Sharp transitions (slideshow-like)
-python ply_to_splatv.py -i ./frames -o output.splatv \
+python ply_to_splatv2.py -i ./frames -o output.splatv \
   --temporal_sigma 0.1
 
 # Smooth blending
-python ply_to_splatv.py -i ./frames -o output.splatv \
+python ply_to_splatv2.py -i ./frames -o output.splatv \
   --temporal_sigma 0.8
 ```
 
 ### Disable Importance Sorting
 
 ```bash
-python ply_to_splatv.py -i ./frames -o output.splatv \
+python ply_to_splatv2.py -i ./frames -o output.splatv \
   --no_sort
 ```
 
@@ -79,19 +79,18 @@ python ply_to_splatv.py -i ./frames -o output.splatv \
 
 ### 🎆 Fireworks Animation
 
-See [examples/fireworks](examples/fireworks/) for a complete physics-based fireworks demo.
+[🎆 Live Demo](https://splatv.vercel.app/?url=hanabi2.splatv#[0.48,-0.86,-0.14,0,0.88,0.46,0.12,0,-0.04,-0.18,0.98,0,-0.24,0.28,5.2,1])
 
 ```bash
 # Generate fireworks frames
 python examples/fireworks/fireworks_generator.py
 
 # Convert to SPLATV
-python ply_to_splatv.py -i ./ -p "fireworks_*.ply" -o fireworks.splatv
+!python ply_to_splatv2.py -i ./frames -o hanabi2.splatv --frame_times "0.0,0.3,0.7,1.0,1.3,1.8"
 
 # Result: 6-stage fireworks animation!
 ```
 
-[🎆 Live Demo](https://your-demo-url)
 
 ### Other Use Cases
 
@@ -155,7 +154,7 @@ Each Gaussian contains:
 ## Command Line Options
 
 ```
-usage: ply_to_splatv.py [-h] -i INPUT_DIR [-p PATTERN] [-o OUTPUT]
+usage: ply_to_splatv2.py [-h] -i INPUT_DIR [-p PATTERN] [-o OUTPUT]
                         [--temporal_sigma TEMPORAL_SIGMA]
                         [--frame_times FRAME_TIMES] [--no_sort]
 
@@ -172,7 +171,6 @@ optional arguments:
 
 ### Official splaTV
 - URL: https://splatv.vercel.app
-- Default: Oscillating time (sin wave)
 
 ### Improved Fork
 For one-way looping with pause control:
@@ -202,10 +200,10 @@ If you use this tool in your research, please cite:
 
 ```bibtex
 @software{ply_to_splatv,
-  author = {Your Name},
+  author = {stpete ishii},
   title = {PLY to SPLATV Converter: Training-Free 4D Gaussian Splatting},
   year = {2025},
-  url = {https://github.com/yourusername/ply-to-splatv}
+  url = {https://github.com/tztechno/ply-to-splatv}
 }
 ```
 
@@ -226,12 +224,6 @@ MIT License - see [LICENSE](LICENSE) file for details.
 🎆 Happy Splatting!
 
 
-
-
-```
-
-!python ply_to_splatv2.py -i ./frames -o hanabi2.splatv --frame_times "0.0,0.3,0.7,1.0,1.3,1.8"
-```
 
 ## Version Information
 
