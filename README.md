@@ -1,8 +1,8 @@
 
 
-# PLY to SPLATV Converter
+# **PLY to SPLATV Converter**
 
-🌟 **World's first tool** to create 4D Gaussian Splatting (SPLATV) animations from multiple static 3D Gaussian Splatting PLY files **without training**.
+🌟 A tool to create 4D Gaussian Splatting (SPLATV) animations from multiple static 3D Gaussian Splatting PLY files **without training**.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.7+](https://img.shields.io/badge/python-3.7+-blue.svg)](https://www.python.org/downloads/)
