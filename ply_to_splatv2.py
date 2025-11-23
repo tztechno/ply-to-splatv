@@ -1,19 +1,24 @@
 
 
 #!/usr/bin/env python3
+
 """
-PLY to SPLATV Converter
-Converts multiple 3DGS PLY files into the splatv format for temporal Gaussian Splatting.
+PLY to SPLATV Converter - Version 2.0
+複数の3DGS PLYファイルをsplaTV viewer用のsplatvファイルに変換
 
-The splatv format structure:
- - Header: [magic 4B][json_len 4B][json][binary_data]
- - Each Gaussian: 64 bytes (16 x uint32)
+Version 2.0 Features:
+- Importance-based sorting for optimal rendering
+- Custom frame timing support
+- Fast NumPy-based packHalf2x16
+- Detailed progress logging
 
-Usage:
-    python ply_to_splatv.py -i ./frames -o output.splatv
+Version History:
+- v1.0: Initial release with basic conversion
+- v2.0: Added sorting, custom timing, performance improvements
 
-Required libraries:
-    pip install numpy plyfile tqdm
+使用方法:
+    python ply_to_splatv.py -i ./frames -o output.splatv --temporal_sigma 0.3
+
 """
 
 import numpy as np
