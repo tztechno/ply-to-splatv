@@ -1,8 +1,9 @@
 
-
 # **PLY to SPLATV Converter**
 
-🌟 A tool to create 4D Gaussian Splatting (SPLATV) animations from multiple static 3D Gaussian Splatting PLY files **without training**.
+🌟 A tool to create 4D Gaussian Splatting (SPLATV) animations from multiple static 3D Gaussian Splatting PLY files.
+
+[🎆 Live Demo](https://splatv.vercel.app/?url=hanabi2.splatv#[0.48,-0.86,-0.14,0,0.88,0.46,0.12,0,-0.04,-0.18,0.98,0,-0.24,0.28,5.2,1])
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.7+](https://img.shields.io/badge/python-3.7+-blue.svg)](https://www.python.org/downloads/)
@@ -86,7 +87,7 @@ python ply_to_splatv2.py -i ./frames -o output.splatv \
 python examples/fireworks_generator.py
 
 # Convert to SPLATV
-!python ply_to_splatv2.py -i ./frames -o hanabi2.splatv --frame_times "0.0,0.3,0.7,1.0,1.3,1.8"
+python ply_to_splatv2.py -i ./frames -o hanabi2.splatv --frame_times "0.0,0.3,0.7,1.0,1.3,1.8"
 
 # Result: 6-stage fireworks animation!
 ```
