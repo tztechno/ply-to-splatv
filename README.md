@@ -40,7 +40,7 @@ Your PLY files should be named sequentially (e.g., `frame_000.ply`, `frame_001.p
 
 ### View the Result
 
-Upload `output.splatv` to your web server and open in [splaTV viewer](https://splatv.vercel.app):
+Upload `output.splatv` to your web server and open in [splatv viewer](https://splatv.vercel.app):
 
 ```
 https://splatv.vercel.app/?url=YOUR_FILE_URL
@@ -83,7 +83,7 @@ python ply_to_splatv2.py -i ./frames -o output.splatv \
 
 ```bash
 # Generate fireworks frames
-python examples/fireworks/fireworks_generator.py
+python examples/fireworks_generator.py
 
 # Convert to SPLATV
 !python ply_to_splatv2.py -i ./frames -o hanabi2.splatv --frame_times "0.0,0.3,0.7,1.0,1.3,1.8"
