@@ -126,7 +126,6 @@ The tool generates temporal parameters for each Gaussian:
 This creates a "slideshow" effect where each frame appears at its designated time.
 
 ## File Format
-
 Output SPLATV format:
 ```
 [Magic: 0x674b]
@@ -143,7 +142,6 @@ Each Gaussian contains:
 - Temporal parameters (trbf_center, trbf_scale)
 
 ## Requirements
-
 - Python 3.7+
 - numpy
 - plyfile
@@ -176,20 +174,17 @@ For one-way looping with pause control:
 - Features: Adjustable pause duration, one-way animation
 
 ## Limitations
-
 - No learned motion blur
 - No view-dependent temporal effects
 - Discrete frame switching (not continuous motion)
 - Larger file size than single PLY
 
 ## Related Projects
-
 - [antimatter15/splaTV](https://github.com/antimatter15/splaTV) - Original web viewer
 - [OPPO SpacetimeGaussians](https://github.com/oppo-us-research/SpacetimeGaussians) - Training-based approach
 - [macaburguera/splaTV](https://github.com/macaburguera/splaTV) - Trained model converter
 
 ## Contributing
-
 Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## Citation
