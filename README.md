@@ -91,7 +91,6 @@ python examples/fireworks_generator.py
 # Result: 6-stage fireworks animation!
 ```
 
-
 ### Other Use Cases
 
 - **Physics Simulations** → Animate simulation frames
@@ -229,7 +228,7 @@ MIT License - see [LICENSE](LICENSE) file for details.
 
 ### Current Version: 2.0.0
 
-**Recommended:** Use `ply_to_splatv.py` (v2) for all new projects.
+**Recommended:** Use `ply_to_splatv2.py` (v2) for all new projects.
 ```bash
 # Latest version (recommended)
 python ply_to_splatv2.py -i ./frames -o output.splatv
