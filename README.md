@@ -78,9 +78,7 @@ python ply_to_splatv2.py -i ./frames -o output.splatv \
 
 ## Examples
 
-### Fireworks Animation
-
-[🎆 Live Demo](https://splatv.vercel.app/?url=hanabi2.splatv#[0.48,-0.86,-0.14,0,0.88,0.46,0.12,0,-0.04,-0.18,0.98,0,-0.24,0.28,5.2,1])
+[🎆 Fireworks Animation](https://splatv.vercel.app/?url=hanabi2.splatv#[0.48,-0.86,-0.14,0,0.88,0.46,0.12,0,-0.04,-0.18,0.98,0,-0.24,0.28,5.2,1])
 
 ```bash
 # Generate fireworks frames
