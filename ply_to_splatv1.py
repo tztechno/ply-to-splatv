@@ -2,18 +2,21 @@
 
 #!/usr/bin/env python3
 """
-PLY to SPLATV Converter
-Converts multiple 3DGS PLY files to the splatv format.
 
-splatv format:
-  - Header: [magic 4B][json_len 4B][json][binary_data]
-  - Each Gaussian: 64 bytes (16 x uint32)
+PLY to SPLATV Converter - Version 1.0 (Legacy)
+複数の3DGS PLYファイルをsplaTV viewer用のsplatvファイルに変換
 
-Usage:
-    python ply_to_splatv_converter.py -i ./frames -o output.splatv
+NOTE: This is the legacy version. For production use, please use
+      ply_to_splatv.py (v2.0) which includes important optimizations.
 
-Required libraries:
-    pip install numpy plyfile tqdm
+v1.0 Features:
+- Basic PLY to SPLATV conversion
+- Temporal parameter generation
+- Simple and educational code
+
+使用方法:
+    python ply_to_splatv_v1.py -i ./frames -o output.splatv
+
 """
 
 import numpy as np
