@@ -64,20 +64,20 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 All v1 commands work in v2:
 ```bash
 # v1 command
-python ply_to_splatv_v1.py -i ./frames -o output.ply
+python ply_to_splatv1.py -i ./frames -o output.splatv
 
 # v2 equivalent (identical behavior)
-python ply_to_splatv.py -i ./frames -o output.splatv
+python ply_to_splatv2.py -i ./frames -o output.splatv
 ```
 
 ### New Features in v2
 ```bash
 # Custom timing (v2 only)
-python ply_to_splatv.py -i ./frames -o output.splatv \
+python ply_to_splatv2.py -i ./frames -o output.splatv \
   --frame_times "0,0.3,0.7,1.0"
 
 # Disable sorting (v2 only)
-python ply_to_splatv.py -i ./frames -o output.splatv \
+python ply_to_splatv2.py -i ./frames -o output.splatv \
   --no_sort
 ```
 
