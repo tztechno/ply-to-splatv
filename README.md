@@ -238,7 +238,7 @@ python ply_to_splatv2.py -i ./frames -o output.splatv
 python ply_to_splatv1.py -i ./frames -o output.splatv
 ```
 
-See [CHANGELOG.md](CHANGELOG.md) for detailed version history and [migration guide](docs/migration_v1_to_v2.md).
+See [CHANGELOG.md](CHANGELOG.md) for detailed version history.
 
 ### Version Comparison
 
