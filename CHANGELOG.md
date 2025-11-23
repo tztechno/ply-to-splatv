@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
-## [2.0.0] - 2025-01-XX
+## [2.0.0] - 2025-11-23
 
 ### Added
 - **Importance-based sorting** - Gaussians sorted by opacity × volume for better rendering quality
@@ -29,7 +29,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Frame time calculation now supports both uniform and custom distributions
 - Added comprehensive type hints and documentation
 
-## [1.0.0] - 2025-01-XX
+## [1.0.0] - 2025-11-23
 
 ### Initial Release
 - Basic PLY to SPLATV conversion
