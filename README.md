@@ -1,7 +1,7 @@
 
 # **PLY to SPLATV Converter**
 
-🌟 A tool to create 4D Gaussian Splatting (SPLATV) animations from multiple static 3D Gaussian Splatting PLY files.
+🌟 This is an original tool to create 4D Gaussian Splatting (SPLATV) animations from multiple static 3D Gaussian Splatting PLY files.
 
 [🎆 Fireworks Animation](https://splatv.vercel.app/?url=hanabi2.splatv#[0.48,-0.86,-0.14,0,0.88,0.46,0.12,0,-0.04,-0.18,0.98,0,-0.24,0.28,5.2,1])
 
